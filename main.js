@@ -50,4 +50,16 @@
 
   /* Footer year */
   document.querySelectorAll('[data-year]').forEach((el) => el.textContent = new Date().getFullYear());
+
+  /* Newsletter signup via the visitor's email app */
+  document.querySelectorAll('[data-newsletter]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const email = form.elements.email.value.trim();
+      const subject = encodeURIComponent('Subscribe to Walmet Agrihub updates');
+      const body = encodeURIComponent(`Please subscribe ${email} to Walmet Agrihub updates.`);
+      window.location.href = `mailto:info@walmetagrihub.co.ke,zabdi.chumba@walmetagrihub.co.ke?subject=${subject}&body=${body}`;
+    });
+  });
 })();
