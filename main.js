@@ -59,7 +59,7 @@
       const email = form.elements.email.value.trim();
       const subject = encodeURIComponent('Subscribe to Walmet Agrihub updates');
       const body = encodeURIComponent(`Please subscribe ${email} to Walmet Agrihub updates.`);
-      window.location.href = `mailto:info@walmetagrihub.co.ke,zabdi.chumba@walmetagrihub.co.ke?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:info@walmetagrihub.co.ke?subject=${subject}&body=${body}`;
     });
   });
 })();

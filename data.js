@@ -16,12 +16,12 @@ window.WALMET_DATA = {
     'landscape':     { label: 'Landscape Restoration',     theme: 'th-land',    icon: 'mountain' }
   },
   work: [
-    { category: 'climate-smart', title: 'Climate-smart farming practices', summary: 'Practical, climate-adapted production systems that reduce risk and build farmer resilience.', location: 'Kenya', image: '' },
-    { category: 'asal',          title: 'ASAL community resilience',       summary: 'Strengthening livelihoods and preparedness in Kenya\u2019s arid and semi-arid lands.', location: 'Kenya', image: '' },
-    { category: 'food-nutrition',title: 'Food & nutrition programming',    summary: 'Linking productive farming to diverse, nutritious diets for households and communities.', location: 'Kenya', image: '' },
-    { category: 'water',         title: 'Water harvesting & irrigation',   summary: 'Capturing and managing water for reliable production through dry periods.', location: 'Kenya', image: '' },
-    { category: 'livelihoods',   title: 'Livelihood diversification',      summary: 'Expanding income opportunities beyond a single crop or enterprise.', location: 'Kenya', image: '' },
-    { category: 'landscape',     title: 'Landscape restoration',           summary: 'Restoring degraded land and improving hydrological stability for lasting impact.', location: 'Kenya', image: '' }
+    { category: 'climate-smart', title: 'Climate-smart farming practices', summary: 'Practical, climate-adapted production systems that reduce risk and build farmer resilience.', location: 'Kenya', image: 'image2.png' },
+    { category: 'asal',          title: 'ASAL community resilience',       summary: 'Strengthening livelihoods and preparedness in Kenya\u2019s arid and semi-arid lands.', location: 'Kenya', image: 'image3.png' },
+    { category: 'food-nutrition',title: 'Food & nutrition programming',    summary: 'Linking productive farming to diverse, nutritious diets for households and communities.', location: 'Kenya', image: 'image6.png' },
+    { category: 'water',         title: 'Water harvesting & irrigation',   summary: 'Capturing and managing water for reliable production through dry periods.', location: 'Kenya', image: 'image1.png' },
+    { category: 'livelihoods',   title: 'Livelihood diversification',      summary: 'Expanding income opportunities beyond a single crop or enterprise.', location: 'Kenya', image: 'image4.png' },
+    { category: 'landscape',     title: 'Landscape restoration',           summary: 'Restoring degraded land and improving hydrological stability for lasting impact.', location: 'Kenya', image: 'image5.png' }
   ],
 
   knowledgeTypes: {

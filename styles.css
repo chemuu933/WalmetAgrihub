@@ -89,10 +89,10 @@ p  { margin: 0 0 1em; }
 .site-header.is-scrolled { box-shadow: var(--shadow-sm); border-color: var(--line); --header-h: 66px; height: 66px; }
 .site-header .container { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
 
-.brand { display: flex; align-items: center; gap: 1rem; }
+.brand { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .4rem; }
 .brand img { height: 52px; width: auto; transition: height .3s; }
 .is-scrolled .brand img { height: 44px; }
-.brand-tag { display: block; font-size: .7rem; line-height: 1.35; color: var(--green-700); border-left: 1px solid var(--line); padding-left: .75rem; max-width: 94px; }
+.brand-tag { display: block; font-size: .62rem; line-height: 1.1; color: var(--green-700); text-align: center; white-space: nowrap; }
 .brand-tag__wide { display: none; }
 
 .nav { display: flex; align-items: center; gap: 1.5rem; }
@@ -258,12 +258,14 @@ main { padding-top: var(--header-h); }
 .visual {
   position: relative; min-height: 380px; border-radius: var(--radius); overflow: hidden; color: #fff; display: flex; align-items: flex-end;
   background:
-    url("../img/about.jpg") center / cover no-repeat,
+    url("image7.png") center / cover no-repeat,
     radial-gradient(300px 200px at 75% 22%, rgba(232,163,58,.55), transparent 70%),
     linear-gradient(170deg, #3f8a4d 0%, #1f6b43 50%, #0b2f1e 100%);
   box-shadow: var(--shadow-md);
 }
+.visual--about { align-items: flex-start; }
 .visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(8,38,24,.75)); }
+.visual--about::after { background: linear-gradient(180deg, rgba(8,38,24,.62), rgba(8,38,24,.08) 68%, rgba(8,38,24,.32)); }
 .visual blockquote { position: relative; z-index: 1; margin: 0; padding: 2rem; font: italic 500 1.25rem/1.4 var(--font-head); }
 .vm-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.8rem; box-shadow: var(--shadow-sm); }
 .vm-card + .vm-card { margin-top: 1rem; }
@@ -312,6 +314,8 @@ main { padding-top: var(--header-h); }
 /* Thumbs: gradient fallbacks per theme. Add real photos via data.js `image`. */
 .thumb { position: relative; background-size: cover; background-position: center; display: grid; place-items: center; color: rgba(255,255,255,.9); overflow: hidden; }
 .thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.thumb.th-asal img { object-position: center top; }
+.thumb.th-land img { object-position: center top; }
 .tile:hover .thumb img, .work-card:hover .thumb img, .post:hover .thumb img { transform: scale(1.07); }
 .thumb .icon { width: 2.4rem; height: 2.4rem; opacity: .85; }
 .th-climate  { background: linear-gradient(135deg, #1f6b43, #8ab43a); }
