@@ -134,9 +134,8 @@ main { padding-top: var(--header-h); }
 .hero {
   position: relative; color: #fff; overflow: hidden; isolation: isolate;
   min-height: min(86vh, 760px); display: flex; align-items: center;
-  /* Drop a real photo at web/assets/img/hero.jpg — it layers over the gradient automatically */
   background:
-    url("../img/hero.jpg") center / cover no-repeat,
+    url("image7.png") center / cover no-repeat,
     radial-gradient(900px 420px at 80% 18%, rgba(232,163,58,.45), transparent 62%),
     linear-gradient(160deg, #0b2f1e 0%, #1f6b43 55%, #3f8a4d 100%);
 }
