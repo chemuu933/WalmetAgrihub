@@ -44,6 +44,9 @@ backend, CMS, newsletter service, analytics, deployment platform, or ongoing
 content-approval process has been confirmed. Do not add these as assumed
 requirements.
 
+The owner-supplied postal address for spec 02 is P.O. Box 8580-30100, Eldoret,
+Kenya. This confirms the postal address only, not a physical office location.
+
 ## Success
 
 No approved success measures or baselines are recorded. The owner should define
